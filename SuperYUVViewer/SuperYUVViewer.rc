@@ -1,0 +1,288 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SuperYUVViewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SuperYUVViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGSourcevideo DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Source video"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOGPicSize DIALOGEX 0, 0, 150, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Picture Size"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Width",IDC_STATIC,20,8,39,13,SS_CENTERIMAGE
+    CTEXT           "Height",IDC_STATIC,90,8,39,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDITWidth,14,24,50,15,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDITHeight,84,24,50,15,ES_CENTER | ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    CTEXT           "X",IDC_STATIC,67,27,15,10
+    GROUPBOX        "",IDC_STATIC,7,0,136,50
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGSourcevideo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOGPicSize, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 194, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SuperYUVViewer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,16,21,20
+    LTEXT           "SuperYUVViewer, Version 1.0",IDC_STATIC,36,12,114,8,SS_NOPREFIX
+    LTEXT           "Author: ZhaoLili <zhao86.job@hotmail.com>",IDC_STATIC,36,25,148,11
+    DEFPUSHBUTTON   "OK",IDOK,137,41,50,14,WS_GROUP
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,36,37,86,8
+END
+
+IDD_SUPERYUVVIEWER_DIALOG DIALOGEX 0, 0, 284, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "SuperYUVViewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,42,39
+    GROUPBOX        "video format",IDC_STATIC,55,7,158,39,WS_GROUP
+    COMBOBOX        IDC_COMBOPicSize,229,23,40,92,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "picture size",IDC_STATIC,221,7,55,39
+    GROUPBOX        "Source file",IDC_STATIC,7,48,270,48
+    EDITTEXT        IDC_EDITSourceFile,14,65,206,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "OPEN",IDC_BUTTONOPEN1,228,55,43,15
+    PUSHBUTTON      "CLEAR",IDC_BUTTONClear,228,77,43,15
+    GROUPBOX        "",IDC_STATIC,7,96,270,39
+    EDITTEXT        IDC_EDITStepSize,18,114,44,13,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "step size",IDC_STATIC,18,102,44,11,SS_CENTERIMAGE
+    PUSHBUTTON      "NEXT",IDC_BUTTON3,124,109,43,14
+    PUSHBUTTON      "PREV",IDC_BUTTON4,72,109,43,14
+    PUSHBUTTON      "PLAY",IDC_BUTTONPlay,228,109,43,14
+    CONTROL         "PSNR",IDC_CHECKPSNR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,22,32,13
+    CONTROL         "YUV420",IDC_RADIOYUV420,"Button",BS_AUTORADIOBUTTON | WS_GROUP,59,22,40,13
+    CONTROL         "YUV422",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,101,22,39,13
+    CONTROL         "YUV444",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,143,22,37,13
+    CONTROL         "264",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,185,22,22,13
+    GROUPBOX        "Reference file",IDC_STATIC,7,140,270,48
+    EDITTEXT        IDC_EDITSourceFile2,14,159,206,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "OPEN",IDC_BUTTONOPEN2,228,148,43,15
+    PUSHBUTTON      "CLEAR",IDC_BUTTON7,228,170,43,15
+    CONTROL         "",IDC_SEPARATOR,"Static",SS_ENHMETAFILE | SS_SUNKEN,7,138,270,2
+    PUSHBUTTON      "RESET",IDC_BUTTONReset,176,109,43,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SUPERYUVVIEWER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileDescription", "<YUVviewer(ZhaoLili)>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "LegalCopyright", "(c) <ZhaoLili>.  All rights reserved."
+            VALUE "Contact", "zhao86.job@hotmail.com"
+            VALUE "ProductName", "<SuperYUVViewer>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SuperYUVViewer..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SuperYUVViewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
