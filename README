@@ -1,0 +1,3 @@
+This is YUV file player, which currently only supports I420 format and needs further improvements to support other YUV formats.
+It plays the whole video sequence and can play frame by frame as well. Users can also set up frame steps to make a jump view.
+The functionality of the player will be further improved later.
